@@ -1,0 +1,61 @@
+@use "variables" as *;
+
+@mixin flex(
+  $direction: null,
+  $justify: null,
+  $align: null,
+  $gap: null,
+  $wrap: null
+) {
+  display: flex;
+
+  @if $direction {
+    flex-direction: $direction;
+  }
+
+  @if $justify {
+    justify-content: $justify;
+  }
+
+  @if $align {
+    align-items: $align;
+  }
+
+  @if $gap {
+    gap: $gap;
+  }
+
+  @if $wrap {
+    flex-wrap: $wrap;
+  }
+}
+
+@mixin flex-column($gap: null) {
+  @include flex($direction: column, $gap: $gap);
+}
+
+@mixin flex-center($gap: null) {
+  @include flex($justify: center, $align: center, $gap: $gap);
+}
+
+@mixin flex-between($gap: null) {
+  @include flex($justify: space-between, $align: center, $gap: $gap);
+}
+
+@mixin flex-end($gap: null) {
+  @include flex($justify: flex-end, $align: center, $gap: $gap);
+}
+
+@mixin text-truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@mixin icon-button($size: 28px) {
+  @include flex-center;
+  width: $size;
+  height: $size;
+  background-color: $color-primary;
+  border-radius: $border-radius-circle;
+}

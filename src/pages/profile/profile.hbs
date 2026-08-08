@@ -1,0 +1,54 @@
+{{#> profile-layout backUrl="/chats"}}
+  <section class="profile">
+    {{> avatar
+      size="lg"
+    }}
+
+    <h1 class="profile__name">Иван</h1>
+
+    <dl class="profile__fields">
+      {{> profile-field
+        label="Почта"
+        value="pochta@yandex.ru"
+      }}
+      {{> profile-field
+        label="Логин"
+        value="ivanivanov"
+      }}
+      {{> profile-field
+        label="Имя"
+        value="Иван"
+      }}
+      {{> profile-field
+        label="Фамилия"
+        value="Иванов"
+      }}
+      {{> profile-field
+        label="Имя в чате"
+        value="Иван"
+      }}
+      {{> profile-field
+        label="Телефон"
+        value="+7 (909) 967 30 30"
+      }}
+    </dl>
+
+    <nav class="profile__actions">
+      {{> link
+        class="profile__action"
+        linkUrl="/profile/edit"
+        linkText="Изменить данные"
+      }}
+      {{> link
+        class="profile__action"
+        linkUrl="/profile/change-password"
+        linkText="Изменить пароль"
+      }}
+      {{> link
+        class="profile__action profile__action_type_danger"
+        linkUrl="/login"
+        linkText="Выйти"
+      }}
+    </nav>
+  </section>
+{{/profile-layout}}

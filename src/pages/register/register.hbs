@@ -1,0 +1,58 @@
+{{#> centered-layout}}
+  {{#> auth-card title="Регистрация" linkUrl="/login" linkText="Войти"}}
+    <form class="auth-form auth-form_type_register" action="#" method="post">
+      <div class="auth-form__fields">
+        {{> form-group
+          label="Почта"
+          name="email"
+          type="email"
+          value="pochta@yandex.ru"
+        }}
+        {{> form-group
+          label="Логин"
+          name="login"
+          type="text"
+          value="ivanivanov"
+        }}
+        {{> form-group
+          label="Имя"
+          name="first_name"
+          type="text"
+          value="Иван"
+        }}
+        {{> form-group
+          label="Фамилия"
+          name="second_name"
+          type="text"
+          value="Иванов"
+        }}
+        {{> form-group
+          label="Телефон"
+          name="phone"
+          type="tel"
+          value="+7 (909) 967 30 30"
+        }}
+        {{> form-group
+          label="Пароль"
+          name="password"
+          type="password"
+          invalidValue=true
+          value="dummy-password"
+        }}
+        {{> form-group
+          label="Пароль (ещё раз)"
+          name="password_repeat"
+          type="password"
+          invalidValue=true
+          errorText="Пароли не совпадают"
+          value="dummy-password"
+        }}
+      </div>
+      {{> button
+        class="auth-form__submit"
+        type="submit"
+        text="Зарегистрироваться"
+      }}
+    </form>
+  {{/auth-card}}
+{{/centered-layout}}

@@ -1,0 +1,24 @@
+<div class="form-group">
+  <label class="form-group__label" for="{{ name }}">{{ label }}</label>
+  <input
+    id="{{ name }}"
+    class="
+      form-group__input
+      {{#if invalidValue}}
+        form-group__input_state_invalid
+      {{/if}}
+    "
+    type="{{ type }}"
+    {{#if value}}
+      value="{{ value }}"
+    {{/if}}
+    {{#if name}}
+      name="{{ name }}"
+    {{/if}}
+  />
+  {{#if errorText}}
+    <span class="form-group__error">
+      {{ errorText }}
+    </span>
+  {{/if}}
+</div>

@@ -1,0 +1,11 @@
+<div class="auth-card">
+  <h1 class="auth-card__title">{{ title }}</h1>
+  <div class="auth-card__content">
+    {{> @partial-block}}
+  </div>
+  {{> link
+    class="auth-card__link"
+    linkUrl=linkUrl
+    linkText=linkText
+  }}
+</div>

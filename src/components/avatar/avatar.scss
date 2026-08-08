@@ -1,0 +1,18 @@
+@use "../../styles/variables" as *;
+
+.avatar {
+  &_size_sm {
+    width: 34px;
+    height: 34px;
+  }
+
+  &_size_md {
+    width: 47px;
+    height: 47px;
+  }
+
+  &_size_lg {
+    width: 130px;
+    height: 130px;
+  }
+}
