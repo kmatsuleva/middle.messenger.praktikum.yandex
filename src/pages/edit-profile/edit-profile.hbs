@@ -1,8 +1,11 @@
 {{#> profile-layout backUrl="/profile"}}
   <section class="profile">
-    {{> avatar
-      size="lg"
-    }}
+    <label class="avatar-upload">
+      {{> avatar
+        size="lg"
+      }}
+      <input type="file" name="avatar" accept="image/*" class="avatar-upload__input" />
+    </label>
 
     <form class="profile__form" action="#" method="post">
       <dl class="profile__fields">
