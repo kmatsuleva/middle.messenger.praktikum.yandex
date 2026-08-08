@@ -1,0 +1,31 @@
+@use "../../styles/variables" as *;
+@use "../../styles/mixins" as *;
+
+.profile-field {
+  @include flex-between($gap: $space-4);
+  padding: $space-2 0;
+  border-bottom: 1px solid $color-border;
+  font-size: $font-size-base;
+
+  &__label {
+    font-weight: $font-weight-medium;
+    color: $color-text-primary;
+  }
+
+  &__value {
+    color: $color-text-secondary;
+    text-align: right;
+  }
+
+  &__input {
+    flex: 1;
+    min-width: 0;
+    padding: 0;
+    color: $color-text-secondary;
+    text-align: right;
+
+    &:focus {
+      color: $color-text-primary;
+    }
+  }
+}

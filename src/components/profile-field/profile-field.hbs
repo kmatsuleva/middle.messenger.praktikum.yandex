@@ -1,0 +1,25 @@
+<div class="profile-field">
+  {{#if editable}}
+    <dt class="profile-field__label">
+      <label for="{{ name }}">{{ label }}</label>
+    </dt>
+    <dd class="profile-field__value">
+      <input
+        id="{{ name }}"
+        class="profile-field__input"
+        name="{{ name }}"
+        type="{{#if type}}{{ type }}{{else}}text{{/if}}"
+        {{#if value}}
+          value="{{ value }}"
+        {{/if}}
+      />
+    </dd>
+  {{else}}
+    <dt class="profile-field__label">
+      {{ label }}
+    </dt>
+    <dd class="profile-field__value">
+      {{ value }}
+    </dd>
+  {{/if}}
+</div>

@@ -1,0 +1,25 @@
+{{#> centered-layout}}
+  {{#> auth-card title="Вход" linkUrl="/register" linkText="Нет аккаунта?"}}
+    <form class="auth-form auth-form_type_login" action="#" method="post">
+      <div class="auth-form__fields">
+        {{> form-group
+          label="Логин"
+          name="login"
+          type="text"
+          value="ivanivanov"
+          errorText="Неверный логин"
+        }}
+        {{> form-group
+          label="Пароль"
+          name="password"
+          type="password"
+        }}
+      </div>
+      {{> button
+        class="auth-form__submit"
+        type="submit"
+        text="Авторизоваться"
+      }}
+    </form>
+  {{/auth-card}}
+{{/centered-layout}}

@@ -1,0 +1,31 @@
+@use "../../styles/variables" as *;
+@use "../../styles/mixins" as *;
+
+.form-group {
+  @include flex-column;
+
+  &__label {
+    font-size: $font-size-xs;
+    color: $color-text-secondary;
+    font-weight: $font-weight-medium;
+    line-height: 1;
+  }
+
+  &__input {
+    padding: $space-2 0;
+    line-height: 1;
+    border-bottom: 1px solid $color-primary;
+    font-size: $font-size-base;
+
+    &_state_invalid {
+      color: $color-danger;
+    }
+  }
+
+  &__error {
+    margin-top: 7px;
+    font-size: $font-size-2xs;
+    line-height: 1;
+    color: $color-danger;
+  }
+}

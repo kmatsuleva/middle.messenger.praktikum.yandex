@@ -1,0 +1,49 @@
+@use "variables" as *;
+@use "mixins" as *;
+
+.profile {
+  @include flex($direction: column, $align: center);
+  width: 510px;
+  padding: 60px 0;
+
+  &__name {
+    margin-top: $space-5;
+    font-size: $font-size-2xl;
+    font-weight: $font-weight-semibold;
+    color: $color-text-primary;
+    line-height: 1;
+  }
+
+  &__fields {
+    width: 100%;
+    margin: $space-8 0 0;
+  }
+
+  &__form {
+    @include flex-column;
+    width: 100%;
+    margin-top: $space-8;
+  }
+
+  &__actions {
+    @include flex-column;
+    width: 100%;
+    margin-top: 60px;
+  }
+
+  &__action {
+    padding: $space-3 0;
+    font-size: $font-size-base;
+    border-bottom: 1px solid $color-border;
+
+    &_type_danger {
+      color: $color-danger-strong;
+    }
+  }
+
+  &__submit {
+    align-self: center;
+    width: 280px;
+    margin-top: 60px;
+  }
+}

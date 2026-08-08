@@ -1,0 +1,8 @@
+@use "variables" as *;
+@use "mixins" as *;
+
+.auth-form {
+  &__fields {
+    @include flex-column($gap: $space-4);
+  }
+}

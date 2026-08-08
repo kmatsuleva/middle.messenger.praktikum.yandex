@@ -1,0 +1,65 @@
+export const chatsMock: any = {
+  profileName: "Профиль",
+  chats: [
+    {
+      id: 1,
+      name: "Андрей",
+      lastMessage: "Изображение",
+      time: "10:49",
+      unreadCount: 2,
+      active: false,
+    },
+    {
+      id: 2,
+      name: "Киноклуб",
+      lastMessage: "стикер",
+      time: "12:00",
+      unreadCount: 0,
+      active: false,
+    },
+    {
+      id: 3,
+      name: "Илья",
+      lastMessage: "Друзья, у меня для вас особенный выпуск новостей!...",
+      time: "15:12",
+      unreadCount: 4,
+      active: false,
+    },
+    {
+      id: 4,
+      name: "Вадим",
+      lastMessage: "Могу починить",
+      time: "Пт",
+      unreadCount: 0,
+      active: true,
+    },
+    {
+      id: 5,
+      name: "тет-а-теты",
+      lastMessage:
+        "И Human Interface Guidelines и Material Design рекомендуют...",
+      time: "Ср",
+      unreadCount: 0,
+      active: false,
+    },
+    {
+      id: 6,
+      name: "1, 2, 3",
+      lastMessage: "Миллионы россиян ежедневно проводят десятки часов свое...",
+      time: "Пн",
+      unreadCount: 0,
+      active: false,
+    },
+    {
+      id: 7,
+      name: "Design Destroyer",
+      lastMessage: "В 2008 году художник Jon Rafman начал собирать...",
+      time: "Пн",
+      unreadCount: 0,
+      active: false,
+    },
+  ],
+  activeChat: {
+    name: "Вадим",
+  },
+};

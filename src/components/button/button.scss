@@ -1,0 +1,13 @@
+@use "../../styles/variables" as *;
+
+.button {
+  padding: $space-3 0;
+  border-radius: $space-2;
+  font-size: $font-size-base;
+  font-weight: $font-weight-medium;
+  line-height: 1;
+  text-align: center;
+  color: $color-white;
+  background-color: $color-primary;
+  width: 100%;
+}

@@ -1,0 +1,15 @@
+<main class="chats-layout">
+  <aside class="chats-layout__sidebar">
+    {{> sidebar}}
+  </aside>
+
+  <section class="chats-layout__content">
+    <div class="chat-area">
+      {{> chat-header
+        activeChat
+      }}
+      <div class="chat-area__messages"></div>
+      {{> message-input}}
+    </div>
+  </section>
+</main>
