@@ -1,0 +1,34 @@
+@use "../../styles/variables" as *;
+@use "../../styles/mixins" as *;
+
+.message-input {
+  @include flex($align: center, $gap: $space-3);
+  padding: $space-2 $space-5;
+  border-top: 1px solid $color-border;
+  background-color: $color-white;
+
+  &__attach {
+    @include flex-center;
+    flex-shrink: 0;
+  }
+
+  &__send {
+    @include icon-button;
+    flex-shrink: 0;
+    transform: rotate(180deg);
+  }
+
+  &__field {
+    flex: 1;
+    padding: $space-3 $space-4;
+    border: none;
+    border-radius: $border-radius-lg;
+    font-size: $font-size-base;
+    color: $color-text-primary;
+    background-color: $color-bg-secondary;
+
+    &::placeholder {
+      color: $color-text-secondary;
+    }
+  }
+}

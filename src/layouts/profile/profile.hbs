@@ -1,0 +1,19 @@
+<div class="profile-layout">
+  <aside class="icon-nav">
+    <nav class="icon-nav__nav">
+      <a class="icon-nav__back" href="{{ backUrl }}">
+        <img
+          class="icon-nav__back-arrow"
+          src="/images/icons/back.svg"
+          alt=""
+          width="6"
+          height="11"
+        />
+      </a>
+    </nav>
+  </aside>
+
+  <main class="profile-main">
+    {{> @partial-block}}
+  </main>
+</div>

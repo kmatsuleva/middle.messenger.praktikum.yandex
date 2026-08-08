@@ -1,0 +1,15 @@
+@use "variables" as *;
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: $font-family-base;
+  color: $color-text-primary;
+}
+
+.app {
+  min-height: 100vh;
+}

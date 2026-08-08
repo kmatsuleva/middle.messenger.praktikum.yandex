@@ -1,0 +1,57 @@
+@use "../../styles/variables" as *;
+@use "../../styles/mixins" as *;
+
+.chat-item {
+  @include flex($align: center, $gap: $space-3);
+  padding: $space-2 $space-3;
+  cursor: pointer;
+  border-bottom: 1px solid $color-border;
+
+  &_active {
+    background-color: #e4edfd;
+  }
+
+  &:hover:not(.chat-item_active) {
+    background-color: #f7f7f7;
+  }
+
+  &__body {
+    @include flex-column($gap: $space-1);
+    flex: 1;
+    min-width: 0;
+  }
+
+  &__name {
+    font-size: $font-size-base;
+    font-weight: $font-weight-semibold;
+    color: $color-text-primary;
+  }
+
+  &__message {
+    font-size: $font-size-md;
+    line-height: 1.2;
+    color: $color-text-secondary;
+    @include text-truncate;
+  }
+
+  &__meta {
+    @include flex($direction: column, $align: flex-end, $gap: $space-1);
+    flex-shrink: 0;
+  }
+
+  &__time {
+    font-size: $font-size-xs;
+    color: $color-text-secondary;
+  }
+
+  &__badge {
+    @include flex-center;
+    min-width: 21px;
+    padding: $space-1;
+    border-radius: $border-radius-lg;
+    font-size: $font-size-sm;
+    font-weight: $font-weight-medium;
+    color: $color-white;
+    background-color: $color-primary;
+  }
+}

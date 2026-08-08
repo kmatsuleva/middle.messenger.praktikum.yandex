@@ -1,0 +1,22 @@
+@use "../../styles/variables" as *;
+@use "../../styles/mixins" as *;
+
+.profile-layout {
+  @include flex;
+  min-height: 100vh;
+}
+
+.icon-nav {
+  @include flex($align: center);
+  padding: 0 $space-5;
+  background-color: $color-bg-secondary;
+
+  &__back {
+    @include icon-button;
+  }
+}
+
+.profile-main {
+  @include flex-center;
+  flex: 1;
+}

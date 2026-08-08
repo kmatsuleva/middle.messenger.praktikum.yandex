@@ -1,0 +1,9 @@
+@use "../../styles/variables" as *;
+
+.link {
+  font-size: $font-size-sm;
+  font-weight: $font-weight-medium;
+  color: $color-primary;
+  text-decoration: none;
+  line-height: 1;
+}
