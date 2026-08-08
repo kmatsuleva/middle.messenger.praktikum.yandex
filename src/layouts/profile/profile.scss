@@ -3,7 +3,7 @@
 
 .profile-layout {
   @include flex;
-  height: 100%;
+  min-height: 100vh;
 }
 
 .icon-nav {
