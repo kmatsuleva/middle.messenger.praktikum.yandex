@@ -47,3 +47,32 @@
     margin-top: 60px;
   }
 }
+
+.avatar-upload {
+  position: relative;
+  cursor: pointer;
+
+  &__input {
+    display: none;
+  }
+
+  &::after {
+    content: "Поменять аватар";
+    position: absolute;
+    inset: 0;
+    padding: $space-5;
+    @include flex-center;
+    border-radius: $border-radius-circle;
+    background-color: $color-overlay;
+    color: $color-white;
+    font-size: $font-size-base;
+    font-weight: $font-weight-medium;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+  }
+
+  &:hover::after {
+    opacity: 1;
+  }
+}

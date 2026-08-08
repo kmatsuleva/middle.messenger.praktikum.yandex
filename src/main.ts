@@ -38,15 +38,21 @@ const navigate = (pathname: any) => {
 
 document.addEventListener("click", (event) => {
   const target = event.target as HTMLElement | null;
-  const link = target?.closest<HTMLElement>("[data-page]");
+  const link = target?.closest<HTMLAnchorElement>("a[href]");
 
   if (!link) {
     return;
   }
 
+  const href = link.getAttribute("href");
+
+  if (href?.startsWith("http")) {
+    return;
+  }
+
   event.preventDefault();
 
-  const pathname = link.dataset.page;
+  const pathname = href;
 
   if (pathname) {
     navigate(pathname);
