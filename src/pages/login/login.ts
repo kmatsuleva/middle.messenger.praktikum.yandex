@@ -6,8 +6,10 @@ import "../../components/auth-card/auth-card";
 import "../../components/form-group/form-group";
 import "../../components/button/button";
 
+import type { RenderPage } from "../../main.types";
+
 import "./login.scss";
 
-const renderLoginPage = () => Handlebars.compile(template)({});
+const renderLoginPage: RenderPage = () => Handlebars.compile(template)({});
 
 export default renderLoginPage;

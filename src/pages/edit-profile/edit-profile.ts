@@ -6,6 +6,8 @@ import "../../components/avatar/avatar";
 import "../../components/profile-field/profile-field";
 import "../../components/button/button";
 
-const renderEditProfilePage = () => Handlebars.compile(template)({});
+import type { RenderPage } from "../../main.types";
+
+const renderEditProfilePage: RenderPage = () => Handlebars.compile(template)({});
 
 export default renderEditProfilePage;

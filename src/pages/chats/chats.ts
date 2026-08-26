@@ -8,6 +8,8 @@ import "../../components/chat-item/chat-item";
 import "../../components/chat-header/chat-header";
 import "../../components/message-input/message-input";
 
-const renderChatsPage = () => Handlebars.compile(template)(chatsMock);
+import type { RenderPage } from "../../main.types";
+
+const renderChatsPage: RenderPage = () => Handlebars.compile(template)(chatsMock);
 
 export default renderChatsPage;

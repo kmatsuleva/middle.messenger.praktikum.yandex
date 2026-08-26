@@ -6,6 +6,8 @@ import "../../components/avatar/avatar";
 import "../../components/profile-field/profile-field";
 import "../../components/button/button";
 
-const renderChangePasswordPage = () => Handlebars.compile(template)({});
+import type { RenderPage } from "../../main.types";
+
+const renderChangePasswordPage: RenderPage = () => Handlebars.compile(template)({});
 
 export default renderChangePasswordPage;

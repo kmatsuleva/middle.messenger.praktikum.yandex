@@ -6,6 +6,8 @@ import "../../components/avatar/avatar";
 import "../../components/profile-field/profile-field";
 import "../../components/link/link";
 
-const renderProfilePage = () => Handlebars.compile(template)({});
+import type { RenderPage } from "../../main.types";
+
+const renderProfilePage: RenderPage = () => Handlebars.compile(template)({});
 
 export default renderProfilePage;

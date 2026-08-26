@@ -6,8 +6,10 @@ import "../../components/auth-card/auth-card";
 import "../../components/form-group/form-group";
 import "../../components/button/button";
 
+import type { RenderPage } from "../../main.types";
+
 import "./register.scss";
 
-const renderRegisterPage = () => Handlebars.compile(template)({});
+const renderRegisterPage: RenderPage = () => Handlebars.compile(template)({});
 
 export default renderRegisterPage;
