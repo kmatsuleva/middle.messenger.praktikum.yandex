@@ -1,4 +1,6 @@
-export const chatsMock: any = {
+import type { ChatsPageData } from "./chats.types";
+
+export const chatsMock: ChatsPageData = {
   profileName: "Профиль",
   chats: [
     {

@@ -7,9 +7,11 @@ import editProfilePage from "./pages/edit-profile/edit-profile";
 import changePasswordPage from "./pages/change-password/change-password";
 import chatsPage from "./pages/chats/chats";
 
+import type { RouteMap } from "./main.types";
+
 import "./styles/main.scss";
 
-const routes: any = {
+const routes: RouteMap = {
   "/": chatsPage,
   "/chats": chatsPage,
   "/profile": profilePage,
@@ -22,7 +24,7 @@ const routes: any = {
 
 const app = document.getElementById("app");
 
-const render = (pathname: any) => {
+const render = (pathname: string): void => {
   if (!app) {
     return;
   }
@@ -31,7 +33,7 @@ const render = (pathname: any) => {
   app.innerHTML = renderPage();
 };
 
-const navigate = (pathname: any) => {
+const navigate = (pathname: string): void => {
   window.history.pushState({}, "", pathname);
   render(pathname);
 };

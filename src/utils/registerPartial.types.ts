@@ -1,0 +1,1 @@
+export type RegisterPartial = (name: string, template: string) => void

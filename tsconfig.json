@@ -11,11 +11,16 @@
     "verbatimModuleSyntax": true,
     "moduleDetection": "force",
     "noEmit": true,
+    /* Type checking */
+    "noImplicitAny": true,
+    "strictNullChecks": true,
     /* Linting */
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "erasableSyntaxOnly": true,
-    "noFallthroughCasesInSwitch": true
+    "noFallthroughCasesInSwitch": true,
+    /* Output */
+    "sourceMap": true
   },
   "include": ["src"]
 }

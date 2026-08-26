@@ -4,6 +4,9 @@ import template from "./error.hbs?raw";
 import "../../layouts/centered/centered";
 import "../../components/error/error";
 
-const renderErrorPage = (context: any) => Handlebars.compile(template)(context);
+import type { RenderErrorPage } from "./error.types";
+
+const renderErrorPage: RenderErrorPage = (context) =>
+  Handlebars.compile(template)(context);
 
 export default renderErrorPage;

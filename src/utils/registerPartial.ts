@@ -1,5 +1,6 @@
 import Handlebars from "handlebars";
+import type { RegisterPartial } from "./registerPartial.types";
 
-export const registerPartial = (name: any, template: any) => {
+export const registerPartial: RegisterPartial = (name, template) => {
   Handlebars.registerPartial(name, template);
-};
+} 
