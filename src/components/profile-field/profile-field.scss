@@ -3,6 +3,7 @@
 
 .profile-field {
   @include flex-between($gap: $space-4);
+  
   padding: $space-2 0;
   border-bottom: 1px solid $color-border;
   font-size: $font-size-base;

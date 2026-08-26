@@ -16,6 +16,7 @@
 
   &__content {
     @include flex-column($gap: $space-4);
+    
     margin-top: $space-10;
   }
 

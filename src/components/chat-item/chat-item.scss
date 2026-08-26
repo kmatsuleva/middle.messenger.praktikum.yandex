@@ -3,6 +3,7 @@
 
 .chat-item {
   @include flex($align: center, $gap: $space-3);
+
   padding: $space-2 $space-3;
   cursor: pointer;
   border-bottom: 1px solid $color-border;
@@ -17,6 +18,7 @@
 
   &__body {
     @include flex-column($gap: $space-1);
+
     flex: 1;
     min-width: 0;
   }
@@ -31,11 +33,13 @@
     font-size: $font-size-md;
     line-height: 1.2;
     color: $color-text-secondary;
+
     @include text-truncate;
   }
 
   &__meta {
     @include flex($direction: column, $align: flex-end, $gap: $space-1);
+
     flex-shrink: 0;
   }
 
@@ -46,6 +50,7 @@
 
   &__badge {
     @include flex-center;
+    
     min-width: 21px;
     padding: $space-1;
     border-radius: $border-radius-lg;

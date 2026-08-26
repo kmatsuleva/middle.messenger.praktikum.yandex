@@ -3,6 +3,7 @@
 
 .chat-header {
   @include flex-between;
+
   padding: $space-2 $space-5;
   border-bottom: 1px solid $color-border;
   background-color: $color-white;
@@ -19,6 +20,7 @@
 
   &__options {
     @include flex-center;
+    
     width: 24px;
     height: 24px;
   }

@@ -3,6 +3,7 @@
 
 .profile {
   @include flex($direction: column, $align: center);
+
   width: 510px;
   padding: 60px 0;
 
@@ -21,12 +22,14 @@
 
   &__form {
     @include flex-column;
+
     width: 100%;
     margin-top: $space-8;
   }
 
   &__actions {
     @include flex-column;
+
     width: 100%;
     margin-top: 60px;
   }
@@ -57,11 +60,12 @@
   }
 
   &::after {
+    @include flex-center;
+
     content: "Поменять аватар";
     position: absolute;
     inset: 0;
     padding: $space-5;
-    @include flex-center;
     border-radius: $border-radius-circle;
     background-color: $color-overlay;
     color: $color-white;

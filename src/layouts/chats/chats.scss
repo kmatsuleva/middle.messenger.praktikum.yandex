@@ -3,11 +3,13 @@
 
 .chats-layout {
   @include flex;
+
   height: 100vh;
   width: 100vw;
 
   &__sidebar {
     @include flex-column;
+    
     width: 310px;
     border-right: 1px solid $color-border;
     background-color: $color-white;
@@ -15,6 +17,7 @@
 
   &__content {
     @include flex-column;
+
     flex: 1;
     background-color: #fbfbfb;
   }
@@ -22,6 +25,7 @@
 
 .chat-area {
   @include flex-column;
+
   height: 100%;
 
   &__placeholder {
@@ -31,6 +35,7 @@
 
   &__messages {
     @include flex-column($gap: $space-3);
+
     flex: 1;
     overflow-y: auto;
   }

@@ -54,6 +54,7 @@
 
 @mixin icon-button($size: 28px) {
   @include flex-center;
+  
   width: $size;
   height: $size;
   background-color: $color-primary;

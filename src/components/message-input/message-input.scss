@@ -3,17 +3,20 @@
 
 .message-input {
   @include flex($align: center, $gap: $space-3);
+
   padding: $space-2 $space-5;
   border-top: 1px solid $color-border;
   background-color: $color-white;
 
   &__attach {
     @include flex-center;
+
     flex-shrink: 0;
   }
 
   &__send {
     @include icon-button;
+    
     flex-shrink: 0;
     transform: rotate(180deg);
   }
